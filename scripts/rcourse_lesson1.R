@@ -32,6 +32,14 @@ xtabs(~type,data_bl)
 
 ## testing on version control
 
+## Make Figures
+# By group
+
+data.plot = ggplot(data, aes(x=group, y=rt)) + geom_boxplot()
 
 
+data.plot
 
+pdf("figures/data.pdf")
+data.plot
+dev.off()
